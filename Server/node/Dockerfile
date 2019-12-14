@@ -5,17 +5,18 @@ MAINTAINER Lavesh Panjwani
 
 RUN yarn global add pm2
 
-RUN mkdir -p /opt/fintech
+RUN mkdir -p /home/lavesh/
 
-RUN mkdir -p /opt/fintech/node
+RUN mkdir -p /home/lavesh/node
 
-WORKDIR /opt/fintech/node
+WORKDIR /home/lavesh/node
 
-ADD . /opt/fintech/node
+ADD . /home/lavesh/node
 
 RUN yarn install
 
 EXPOSE 5555
 
 # Run app
-CMD ["pm2-runtime", "start", "server.config.js"]
+CMD ["pm2-runtime", "start","server.config.js"]
+# CMD ["yarn", "start"]

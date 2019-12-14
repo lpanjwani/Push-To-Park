@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "467002437102",
+    "firebase_url": "https://mdx-fintech-quickpark.firebaseio.com",
+    "project_id": "mdx-fintech-quickpark",
+    "storage_bucket": "mdx-fintech-quickpark.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467002437102:android:d7738d5bc96b6bb404f2ff",
+        "android_client_info": {
+          "package_name": "com.lavesh.quickpark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467002437102-130qfigig7hjo1ilve539vkha8gkcb2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbN5IMSpJipb5Aisi1XsObnf1rUb7hz3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467002437102-130qfigig7hjo1ilve539vkha8gkcb2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
