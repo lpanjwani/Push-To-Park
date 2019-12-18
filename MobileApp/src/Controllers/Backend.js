@@ -1,16 +1,30 @@
-const BackendURL = "http://192.168.1.112:5555";
+const BackendURL = "http://quickpark.highcal.co";
 const userID = "5df4ac603041f60006b07413";
 
-async function ParkingValid() {
-  const service = await fetch(`${BackendURL}/parking/valid`, {
-    method: "GET",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json"
-    }
-  });
-  const response = await server.json();
-  return response.isValid;
+async function ParkingisValid() {
+	const service = await fetch(`${BackendURL}/user/${userID}/transactions/valid`, {
+		method: "GET",
+		headers: {
+			Accept: "application/json",
+			"Content-Type": "application/json"
+		}
+	});
+	const response = await service.json();
+	console.log(response);
+	return response;
 }
 
-export { BackendURL, userID, ParkingValid };
+async function ZoneLocations() {
+	const service = await fetch(`${BackendURL}/zone/all`, {
+		method: "GET",
+		headers: {
+			Accept: "application/json",
+			"Content-Type": "application/json"
+		}
+	});
+	const response = await service.json();
+	console.log(response);
+	return response;
+}
+
+export { BackendURL, userID, ParkingisValid, ZoneLocations };

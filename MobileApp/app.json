@@ -1,34 +1,28 @@
 {
-  "expo": {
-    "name": "Quick Park",
-    "slug": "quick-park",
-    "privacy": "public",
-    "sdkVersion": "36.0.0",
-    "platforms": ["ios", "android", "web"],
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": ["**/*"],
-    "android": {
-      "package": "com.lavesh.quickpark",
-      "googleServicesFile": "./google-services.json",
-      "permissions": [
-        "ACCESS_COARSE_LOCATION",
-        "ACCESS_FINE_LOCATION",
-        "com.google.android.providers.gsf.permission.READ_GSERVICES",
-        "com.google.android.c2dm.permission.RECEIVE"
-      ]
-    },
-    "ios": {
-      "supportsTablet": true
-    }
-  }
+	"expo": {
+		"name": "Push to Park",
+		"slug": "quick-park",
+		"privacy": "public",
+		"sdkVersion": "36.0.0",
+		"platforms": ["ios", "android", "web"],
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"android": {
+			"package": "com.lavesh.quickpark",
+			"permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"],
+			"config": {
+				"googleMaps": {
+					"apiKey": "AIzaSyBmn_K2z7IgHfGRaUVZxUNXFsxzdXVzsxk"
+				}
+			}
+		},
+		"ios": {
+			"supportsTablet": true
+		}
+	}
 }
